@@ -1,0 +1,127 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ExamView.master.cs" Inherits="System1.Pages.Student.ExamView" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+      <meta charset="UTF-8">
+      <title>Online Exam </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico">
+     <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+
+     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    
+     <link href="../../Content/Styles.css" rel="stylesheet" />
+  
+        <script src="../../Scripts/jquery-3.0.0.min.js"></script>
+        <script src="../../Scripts/popper.min.js"></script>
+        <script src="../../Scripts/bootstrap.min.js"></script>
+
+     <script>
+         $(document).ready(function () {
+             $(".siderbar_menu li").click(function () {
+                 $(".siderbar_menu li").removeClass("active");
+                 $(this).addClass("active");
+             });
+
+             $(".hamburger").click(function () {
+                 $(".wrapper").addClass("active");
+             });
+
+             $(".close, .bg_shadow").click(function () {
+                 $(".wrapper").removeClass("active");
+             });
+         });
+     </script>
+
+    <style type="text/css">
+        .auto-style1 {
+            position: relative;
+            width: 100%;
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+            left: -54px;
+            top: 309px;
+            padding-left: 15px;
+            padding-right: 15px;
+            height: 173px;
+        }
+
+       
+             .auto-style2 {
+            position: relative;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            height: 75px;
+            width: 100%;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125);
+            left: 0px;
+            top: 0px;
+            padding: 0 20px;
+            background: #fff;
+        }
+        
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+              <div class="main_container1">
+                <div class="auto-style2">
+                <div class="navbar">
+                    <div class="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <div class="logo">
+                        <a href="#">Online Exam System</a>
+                    </div>
+
+                    <div style="display:flex;justify-content:center;align-items:center;">
+                    <div class="logo">
+                        <div style="width:35px;height:35px;border-radius:50%;background-color:red;"><div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div><p>Hello Student</p></div>
+                         </div>
+                            </div>
+                </div>  
+                </div>
+                </div>
+                </div>
+           </div>
+    
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            
+              <div>
+                <footer>
+            
+                        <div class="footer-bottom">
+                            <div class="row d-flex align-items-center">
+                                <div class="auto-style1">
+                                    <div class="footer-copy-right text-center">
+                                        <hr>
+                                        <p>&copy; <script>document.write(new Date().getFullYear());</script> All rights reserved. This Made By  <i class="fa fa-heart" aria-hidden="true"></i> by <a href="#" target="_blank">Ritesh & Shreyas</a></p>
+                                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+        <!-- Footer End -->
+
+          </div>
+        </div>
+    </form>    </body>
+</html>
